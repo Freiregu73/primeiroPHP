@@ -1,7 +1,7 @@
 <?php 
 
-$op = 3;
-$num1 = 10;
+$op = 4;
+$num1 = 0;
 $num2 = 5;
 
 
@@ -18,8 +18,13 @@ switch ($op) {
 		$nomeOp= "multiplicação";
 		break;
 
-	case 4: $resp = $num1 / $num2;
+	case 4: if ($num1!= 0) {
+		$resp = $num1 / $num2;
 		$nomeOp = "divisão";
+	} else{
+		$nomeOp = "operação é invalida";
+		$resp = "impssivel divisão por 0";
+	}
 		break;
 	
 	default: echo("Sair");
@@ -29,3 +34,4 @@ switch ($op) {
 	echo "A $nomeOp do $num1 e $num2 = $resp";
 
  ?>
+

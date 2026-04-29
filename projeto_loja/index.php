@@ -11,7 +11,7 @@
 <form action="contato.php" method="post">
 
 	<label for="idNome">Nome:</label>
-	<input type="text" id="idNome" name="nome" placeholder="Insira seu nome" maxlength="50" autocomplete="off" required>
+	<input type="text" id="idNome" name="nome" placeholder="Insira seu nome" maxlength="50" autocomplete="off" required autofocus>
 
 	<label for="idEmail">Email:</label>
 	<input type="email" id="idEmail" name="email" placeholder="Insira seu email" maxlength="50" autocomplete="off" required>

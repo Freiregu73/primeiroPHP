@@ -9,11 +9,24 @@
 
 	$imc = $peso / ($altura*$altura);
 
-	if ($imc) {
-		// code...
-	}
+	$classificacao ="";
 
-	echo "Óla $nome, <br> Seu peso é de: $peso KG. <br> Sua altura é de: $altura m. <br> Sua taxa do IMC é igual a $imc.";
+	if ($imc < 19 ) {
+		$classificacao = "Abaixo do peso!";
+	} else if($imc < 25){
+		$classificacao = "Peso ideal";
+	}else if($imc < 29){
+		$classificacao = "Sobrepeso";
+	}else if($imc < 34){
+		$classificacao = "Obesidade grau 1";
+	}else if($imc < 39){
+		$classificacao = "Obesidade grau 2";
+	}else{
+		$classificacao = "Obesidade grau 3";
+	};
+
+	echo "Óla $nome, <br> Seu peso é de: $peso KG. <br> Sua altura é de: $altura m. <br> Sua classificação é: $classificacao <br>";
+	printf("Sua taxa do IMC é igual a: %.2f", $imc);
 
 
 

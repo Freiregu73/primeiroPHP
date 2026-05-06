@@ -10,6 +10,12 @@
 
 	<h1>Cálculo IMC</h1>
 
+	<h2>Tabela de classificação</h2>
+
+	<img src="imagem/imc.jpg">
+
+	<h2>Calculadora IMC</h2>
+
 	<form action="imc.php" method="post">
 		<label for="nome">Nome:</label> <br>
 		<input type="text" name="nome" id="nome" maxlength="50" required autocomplete="off" autofocus size="20"> <br> <br>

@@ -13,6 +13,7 @@
 	 ?>
 </head>
 <body>
+	<b>Página autorizada!!!</b>
 
 </body>
 </html>

@@ -10,8 +10,8 @@
 </head>
 <body>
 	<b>Funcionário: </b><?php echo $_SESSION['nome']; ?>, logado com sucesso. <br>
-	<b>Data da conexão</b><?php echo date("d/m/Y") ?> <br>
-	<b>Hora da conexão</b><?php echo date("h:i:s") ?><br><br>
+	<b>Data da conexão </b><?php echo date("d/m/Y") ?> <br>
+	<b>Hora da conexão </b><?php echo date("h:i:s") ?><br><br>
 	<a href="sessao_formularios_valida.php">Área do administrador</a><br>
 </body>
 </html>

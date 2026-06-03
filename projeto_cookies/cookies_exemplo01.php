@@ -2,6 +2,11 @@
 	setcookie('usuarios', 'etecia',time()+86400);
 
 	setcookie('admin', 'master', time()+86400);
+
+	$value = 'aluno';
+	//setcookie("Ocupacao", $value);
+	setcookie("Ocupacao", $value, time()+60);
+
  ?>
  <!DOCTYPE html>
  <html>
@@ -13,8 +18,8 @@
  <body>
  	<?php 
 
- 		if (isset($_COOKIE['usuarios'])) {
-		echo "Bem vindo ".$_COOKIE['usuarios']."! <br>";
+ 		if (isset($_COOKIE['Ocupacao'])) {
+		echo "Bem vindo ".$_COOKIE['Ocupacao']."! <br>";
 		}else{
 		echo "Usuário novo, seja bem vindo! <br>";
 		};

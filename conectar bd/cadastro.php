@@ -1,9 +1,11 @@
 <?php 
-
 	$host = "localhost";
 	$user = "gusta";
 	$pwd = "123456";
 	$db = "dbloja";
+
+	$nome = $_POST['nome'];
+	$email = $_POST['email'];
 
 	$conection = mysqli_connect($host, $user, $pwd, $db);
 
@@ -11,11 +13,18 @@
 		echo "Erro ao conectar a base de dados" . mysqli_connect_error();
 
 	}else{
-		//echo "Banco de dados conectado com sucesso!!!";
-		$sql = "insert into tbPessoa(nome,email)values('Etecia','sac@etecia.com')";
-		$sql1 = "insert into tbPessoa(nome,email)values('Gusta','Gusta@etecia.com')";
-		mysqli_query($conection,$sql1);
+
+		$sql = "insert into tbPessoa (nome,email)values('$nome','$email')";
+
+		if (mysqli_query($conection,$sql)){
+			echo "Cadastrado com sucesso!!!";
+
+		}else{
+			echo "Erro ao cadastrar!" . mysqli_error();
+		}
 		mysqli_close($conection);
+
 	}
+
 
  ?>

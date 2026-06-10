@@ -4,8 +4,8 @@
 	$pwd = "123456";
 	$db = "dbloja";
 
-	$nome = $_POST['nome'];
-	$email = $_POST['email'];
+	//$nome = $_POST['nome'];
+	//$email = $_POST['email'];
 
 	$conection = mysqli_connect($host, $user, $pwd, $db);
 
